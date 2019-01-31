@@ -30,7 +30,7 @@ key_value = ["3377","6435","9959","9343","7133","4383","9167","4293",
 # 数据读取
 def read_excel():
     # 打开文件
-    workbook = xlrd.open_workbook(r'result.xls')
+    workbook = xlrd.open_workbook(r'data.xls')
     # 根据sheet索引或者名称获取sheet内容
     sheet1 = workbook.sheet_by_name('Sheet1')
     # 获取整行和整列的值（数组）
@@ -50,7 +50,7 @@ def read_excel():
 
 # 模拟抽奖
 def get_data():
-    f = open("data.txt","r")
+    f = open("Pi.txt","r")
     lines = f.readlines()#读取全部内容
     data = lines[0]
     data = data.replace("\n", "")
