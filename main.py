@@ -70,10 +70,8 @@ def search(number):
 def get_result():
     new_data = []
     data = read_excel()
-    #print(data)
     lucky_number = data[3]
     key = data[4]
-    #print(key)
     for i in range(1,len(data[0])):
         if str(int(key[i])) in key_value:
             temp = []
